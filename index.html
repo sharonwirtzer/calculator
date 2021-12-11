@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="/img/calculator.jpeg" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>calculator</title>
+</head>
+
+<body>
+    <h1>YOU CAN COUNT ON ME.</h1>
+    <p id="demo"></p>
+    <form name="calculator" class="calculator">
+        <table>
+            <tr>
+                <td style="height: 90px; " colspan="4">
+                    <input class='displayNo' type="text" maxlength="10"  name="display" id="display">
+                </td>
+            </tr>
+
+            <tr>
+                <td><input class="upColor" type='button' value='AC' onclick="play(),display.value = '' "></td>
+                <td><input class="upColor" type='button' value='+/-' onclick="play(),display.value += '-'"></td>
+                <td><input class="upColor" type='button' value='%' onclick="play(),display.value += '%'"></td>
+                <td><input class="orangeColor" type='button' value='÷' onclick="play(),display.value += '/'"></td>
+            </tr>
+
+            <tr>
+                <td><input class="middleColor" type="button" value="7" onclick="play(),display.value += '7'"></td>
+                <td><input class="middleColor" type="button" value="8" onclick="play(),display.value += '8'"></td>
+                <td><input class="middleColor" type="button" value="9" onclick="play(),display.value += '9'"></td>
+                <td><input class="orangeColor" type="button" value="x" onclick="play(),display.value += '*'"></td>
+            </tr>
+
+            <tr>
+                <td><input class="middleColor" type="button" value="4" onclick="play(),display.value += '4'"></td>
+                <td><input class="middleColor" type="button" value="5" onclick="play(),display.value += '5'"></td>
+                <td><input class="middleColor" type="button" value="6" onclick="play(),display.value += '6'"></td>
+                <td><input class="orangeColor" type="button" value="-" onclick="play(),display.value += '-'"></td>
+            </tr>
+
+            <tr>
+                <td><input class="middleColor" type="button" value="1" onclick="play(),display.value += '1'"></td>
+                <td><input class="middleColor" type="button" value="2" onclick="play(),display.value += '2'"></td>
+                <td><input class="middleColor" type="button" value="3" onclick="play(),display.value += '3'"></td>
+                <td><input class="orangeColor" type="button" value="+" onclick="play(),display.value += '+'"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><input class="zero" type="button" value="0" onclick="play(),display.value += '0'"> </td>
+                <td><input class="middleColor" type="button" value="." onclick="play(),display.value += '.'"></td>
+                <td><input style="border-bottom-right-radius: 5px;" class="orangeColor" type="button" value="=" onclick="play(),calc()"></td>
+            </tr>
+        </table>
+    </form>
+
+    <audio id="audio"
+        src="https://www.zapsplat.com/wp-content/uploads/2015/sound-effects-18146/zapsplat_multimedia_click_001_19367.mp3?_=1"></audio>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

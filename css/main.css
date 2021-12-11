@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+
+* {
+    margin: 0%;
+    font-family: "Assistant", sans-serif;
+    border: none;
+}
+
+body {
+    text-align: center;
+    background-image: url("/img/image1.jpeg");
+    background-size: cover;
+}
+
+h1 {
+    font-size: 44px;
+    margin-top: 30px;
+    font-family: "Amatic SC", cursive;
+    color: #33393f;
+}
+
+input[type="button"] {
+    background-color: b2b2b2;
+    width: 105px;
+    height: 95px;
+    color: #fff;
+    font-size: 33px;
+    cursor: pointer;
+}
+
+.calculator {
+    margin-top: 30px;
+    background-color: #323131;
+    width: 440px;
+    height: 610px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    display: grid;
+    box-shadow: 0 0 10px 0 rgba(125, 125, 125, 0.5);
+}
+
+.displayNo {
+    text-align: right;
+    width: 380px;
+    font-size: 80px;
+    background: #323131;
+    color: #fff;
+    outline: none;
+    cursor: text;
+}
+
+.orangeColor {
+    background-color: #fca72f;
+}
+
+.middleColor {
+    background-color: #8e8e8c;
+}
+
+.upColor {
+    background-color: #505050;
+}
+
+.zero {
+    width: 215px !important;
+    background-color: #8e8e8c;
+    border-bottom-left-radius: 5px;
+}
